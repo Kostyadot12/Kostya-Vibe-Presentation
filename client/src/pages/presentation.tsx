@@ -760,6 +760,19 @@ function Slide17() {
         <NumberCard number="0" label="строчек кода" />
         <NumberCard number="2 нед" label="до MVP" accent />
       </div>
+      <motion.a
+        href="https://voice-ai-production-8193.up.railway.app/admin/live-dashboard"
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 }}
+        className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold text-base hover:from-purple-500 hover:to-cyan-500 transition-all shadow-lg shadow-purple-500/20"
+        data-testid="link-startup"
+      >
+        <Rocket className="w-5 h-5" />
+        Мой стартап
+      </motion.a>
     </SlideContainer>
   );
 }
