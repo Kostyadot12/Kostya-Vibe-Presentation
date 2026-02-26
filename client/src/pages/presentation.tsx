@@ -178,6 +178,14 @@ function Slide1() {
         transition={{ duration: 0.6 }}
         className="text-center max-w-4xl"
       >
+        <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-3 border-purple-500/50 p-1 mx-auto mb-6">
+          <img
+            src={avatarPhoto}
+            alt="Костя на Вайбе"
+            className="w-full h-full rounded-full object-cover object-[center_20%]"
+            data-testid="img-avatar"
+          />
+        </div>
         <AccentBadge>ВЕБИНАР</AccentBadge>
         <h1 className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
           <GradientText>МИЛЛИОН</GradientText>
@@ -188,17 +196,9 @@ function Slide1() {
           Моя полная стратегия. Без строчки кода.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 text-gray-500">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full border-2 border-purple-500/50 p-0.5">
-              <img
-                src={avatarPhoto}
-                alt="Костя на Вайбе"
-                className="w-full h-full rounded-full object-cover object-top"
-                data-testid="img-avatar"
-              />
-            </div>
-            <span>Костя на Вайбе</span>
-          </div>
+          <span className="flex items-center gap-2">
+            <Users className="w-4 h-4" /> Костя на Вайбе
+          </span>
           <span className="hidden sm:block">|</span>
           <span className="flex items-center gap-2">
             <Calendar className="w-4 h-4" /> 2026
