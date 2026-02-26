@@ -46,6 +46,7 @@ import review1 from "@assets/Снимок_экрана_2026-02-26_в_18.26.24_17
 import review2 from "@assets/Снимок_экрана_2026-02-26_в_18.27.22_1772119645574.png";
 import review3 from "@assets/Снимок_экрана_2026-02-26_в_18.27.37_1772119659798.png";
 import review4 from "@assets/Снимок_экрана_2026-02-26_в_18.27.52_1772119674316.png";
+import chatScreenshot from "@assets/Снимок_экрана_2026-02-26_в_18.31.01_1772119866216.png";
 
 const receiptImages = [receipt1, receipt2, receipt3, receipt4, receipt5, receipt6, receipt7, receipt8, receipt9, receipt10];
 
@@ -469,19 +470,23 @@ function Slide9() {
         КАК НАХОЖУ <GradientText>КЛИЕНТОВ</GradientText>
       </SlideTitle>
       <div className="max-w-3xl w-full">
-        <div className="rounded-2xl bg-white/5 border border-white/10 p-6 sm:p-8 mb-8">
-          <div className="flex items-center gap-3 mb-4">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2 }}
+          className="rounded-2xl bg-white/5 border border-white/10 p-3 sm:p-4 mb-8 overflow-hidden"
+        >
+          <div className="flex items-center gap-3 mb-3">
             <MessageSquare className="w-5 h-5 text-purple-400" />
             <span className="text-gray-400 text-sm">Реальная переписка</span>
           </div>
-          <div className="space-y-3 text-base sm:text-lg">
-            <p className="text-cyan-300">"Привет, можешь сделать сайт для моей студии?"</p>
-            <p className="text-gray-300">"Да. Что нужно?"</p>
-            <p className="text-cyan-300">[описывает задачу]</p>
-            <p className="text-gray-300">"25 000, готово через 3 дня."</p>
-            <p className="text-cyan-300">"Давай."</p>
-          </div>
-        </div>
+          <img
+            src={chatScreenshot}
+            alt="Реальная переписка с клиентом"
+            className="w-full h-auto rounded-xl"
+            data-testid="img-chat-screenshot"
+          />
+        </motion.div>
         <div className="flex flex-wrap justify-center gap-3">
           {["Знакомые", "Сарафан", "Соцсети", "Чаты", "Авито"].map((ch, i) => (
             <motion.div
