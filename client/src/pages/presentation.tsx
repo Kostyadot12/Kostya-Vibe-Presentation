@@ -39,6 +39,8 @@ import receipt8 from "@assets/2026-02-26_17.42.46_1772117075361.jpg";
 import receipt9 from "@assets/2026-02-26_17.42.50_1772117075361.jpg";
 import receipt10 from "@assets/2026-02-26_17.42.52_1772117075361.jpg";
 
+import avatarPhoto from "@assets/2026-02-26_17.48.43_1772117336127.jpg";
+
 const receiptImages = [receipt1, receipt2, receipt3, receipt4, receipt5, receipt6, receipt7, receipt8, receipt9, receipt10];
 
 interface SlideProps {
@@ -186,12 +188,20 @@ function Slide1() {
           Моя полная стратегия. Без строчки кода.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 text-gray-500">
-          <span className="flex items-center gap-2">
-            <Users className="w-4 h-4" /> Костя на Вайбе
-          </span>
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full border-2 border-purple-500/50 p-0.5">
+              <img
+                src={avatarPhoto}
+                alt="Костя на Вайбе"
+                className="w-full h-full rounded-full object-cover object-top"
+                data-testid="img-avatar"
+              />
+            </div>
+            <span>Костя на Вайбе</span>
+          </div>
           <span className="hidden sm:block">|</span>
           <span className="flex items-center gap-2">
-            <Calendar className="w-4 h-4" /> 2025
+            <Calendar className="w-4 h-4" /> 2026
           </span>
         </div>
       </motion.div>
