@@ -28,6 +28,19 @@ import {
   Layers,
 } from "lucide-react";
 
+import receipt1 from "@assets/2026-02-26_17.42.18_1772117075361.jpg";
+import receipt2 from "@assets/2026-02-26_17.42.29_1772117075361.jpg";
+import receipt3 from "@assets/2026-02-26_17.42.32_1772117075361.jpg";
+import receipt4 from "@assets/2026-02-26_17.42.35_1772117075361.jpg";
+import receipt5 from "@assets/2026-02-26_17.42.38_1772117075361.jpg";
+import receipt6 from "@assets/2026-02-26_17.42.41_1772117075361.jpg";
+import receipt7 from "@assets/2026-02-26_17.42.44_1772117075361.jpg";
+import receipt8 from "@assets/2026-02-26_17.42.46_1772117075361.jpg";
+import receipt9 from "@assets/2026-02-26_17.42.50_1772117075361.jpg";
+import receipt10 from "@assets/2026-02-26_17.42.52_1772117075361.jpg";
+
+const receiptImages = [receipt1, receipt2, receipt3, receipt4, receipt5, receipt6, receipt7, receipt8, receipt9, receipt10];
+
 interface SlideProps {
   children: React.ReactNode;
   className?: string;
@@ -245,28 +258,56 @@ function Slide4() {
       <SlideTitle>
         ЧТО ВЫ <GradientText>ПОЛУЧИТЕ</GradientText>
       </SlideTitle>
-      <div className="max-w-3xl w-full space-y-5">
-        <BulletPoint icon={TrendingUp} delay={0}>
-          Как я вышел на <strong className="text-white">500К/мес</strong> за 6 месяцев с нуля
-        </BulletPoint>
-        <BulletPoint icon={Layers} delay={1}>
-          Три направления: сайты &#8594; автоматизации &#8594; стартап
-        </BulletPoint>
-        <BulletPoint icon={BarChart3} delay={2}>
-          Структура миллиона: сколько приносит каждое направление
-        </BulletPoint>
-        <BulletPoint icon={Zap} delay={3}>
-          Живая демонстрация: создам рабочий сайт <strong className="text-cyan-400">за 3 минуты</strong> на ваших глазах
-        </BulletPoint>
+      <div className="max-w-4xl w-full flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
+        <div className="flex-1 space-y-4">
+          <BulletPoint icon={TrendingUp} delay={0}>
+            Как я вышел на <strong className="text-white">500К/мес</strong> за 6 месяцев с нуля
+          </BulletPoint>
+          <BulletPoint icon={Layers} delay={1}>
+            Три направления: сайты &#8594; автоматизации &#8594; стартап
+          </BulletPoint>
+          <BulletPoint icon={BarChart3} delay={2}>
+            Структура миллиона: сколько приносит каждое направление
+          </BulletPoint>
+          <BulletPoint icon={Zap} delay={3}>
+            Живая демонстрация: создам рабочий сайт <strong className="text-cyan-400">за 3 минуты</strong> на ваших глазах
+          </BulletPoint>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="pt-3 text-base text-gray-500 italic"
+          >
+            Это не мотивационный вебинар. Это стратегия, которую вы можете скопировать.
+          </motion.p>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="w-full lg:w-[280px] flex-shrink-0"
+        >
+          <p className="text-xs text-gray-500 mb-3 text-center uppercase tracking-wider">Реальные оплаты</p>
+          <div className="grid grid-cols-5 lg:grid-cols-2 gap-2">
+            {receiptImages.slice(0, 6).map((img, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.6 + i * 0.08 }}
+                className="rounded-lg border border-white/10 bg-white/5 p-0.5"
+              >
+                <img
+                  src={img}
+                  alt={`Оплата ${i + 1}`}
+                  className="w-full h-auto rounded-md object-cover"
+                  data-testid={`img-receipt-${i}`}
+                />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8 }}
-        className="mt-10 text-lg text-gray-500 italic text-center"
-      >
-        Это не мотивационный вебинар. Это стратегия, которую вы можете скопировать.
-      </motion.p>
     </SlideContainer>
   );
 }
