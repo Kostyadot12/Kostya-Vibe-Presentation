@@ -504,11 +504,11 @@ function Slide10() {
       <div className="max-w-3xl w-full grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="rounded-xl bg-white/5 border border-white/10 p-5 sm:p-6">
           <h3 className="text-lg font-semibold text-white mb-4">Прайс</h3>
-          <PriceRow label="Лендинг" price="15 - 40К &#8381;" />
-          <PriceRow label="Телеграм-бот" price="10 - 50К &#8381;" />
-          <PriceRow label="Мини-приложение" price="30 - 100К &#8381;" />
-          <PriceRow label="Автоматизация" price="5 - 20К &#8381;" />
-          <PriceRow label="Дашборд" price="20 - 60К &#8381;" />
+          <PriceRow label="Лендинг" price="15 - 25К &#8381;" />
+          <PriceRow label="Телеграм-бот" price="5 - 25К &#8381;" />
+          <PriceRow label="Мини-приложение" price="5 - 25К &#8381;" />
+          <PriceRow label="Автоматизация" price="5 - 25К &#8381;" />
+          <PriceRow label="Дашборд" price="5 - 25К &#8381;" />
         </div>
         <div className="space-y-4">
           <div className="rounded-xl bg-gradient-to-br from-purple-600/20 to-cyan-600/10 border border-purple-500/20 p-5 sm:p-6">
