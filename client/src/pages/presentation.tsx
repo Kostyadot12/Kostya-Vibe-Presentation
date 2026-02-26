@@ -653,7 +653,7 @@ function Slide14() {
           </div>
           <div>
             <span className="text-sm text-gray-500">Чек</span>
-            <p className="text-lg text-purple-300 font-bold">45 000 &#8381;</p>
+            <p className="text-lg text-purple-300 font-bold">25 000 &#8381;</p>
           </div>
         </div>
         <div className="flex items-center gap-3 pt-4 border-t border-white/10">
