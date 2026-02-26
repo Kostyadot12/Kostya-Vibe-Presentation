@@ -944,10 +944,10 @@ function Slide23() {
       <SlideSubtitle>Вот что пишут ребята, которые уже начали</SlideSubtitle>
       <div className="max-w-3xl w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
         {[
-          { text: "Я реально за вечер сделал сайт. Не верю.", from: "Алексей, 28 лет" },
-          { text: "Показал знакомому - он готов заплатить 15 тысяч.", from: "Марина, 32 года" },
-          { text: "Мне 35, я бухгалтер, думал это для молодых. Нет.", from: "Дмитрий, 35 лет" },
-          { text: "Первый раз в жизни заработал на чем-то кроме зарплаты.", from: "Анна, 27 лет" },
+          { text: "Я иду на мастер-класс, потому что мне нужен опытный партнер и возможность получить наставничество от практика, а не просто преподавателя.", from: "Алексей Чиженко" },
+          { text: "Сделаю этот проект с Костей на мастер группе. У меня уже 13 листов ТЗ — какие данные нужны, как обрабатываться и визуализироваться.", from: "Участник МГ" },
+          { text: "Ценность данного марафона бесценна, много фишек и идей в направлении вайбкода, который раскрывается в океан возможностей!!!", from: "S Dmitriy" },
+          { text: "Очень крутой марафон. Это первый случай когда я заплатил и остался в плюсе x2. Спасибо Косте за материал и готовность помочь каждому индивидуально!", from: "Kirill Bodyagin" },
         ].map((review, i) => (
           <motion.div
             key={i}
@@ -957,8 +957,8 @@ function Slide23() {
             className="rounded-xl bg-white/5 border border-white/10 p-5"
           >
             <Star className="w-4 h-4 text-yellow-400 mb-3" />
-            <p className="text-gray-200 text-base mb-3">"{review.text}"</p>
-            <p className="text-sm text-gray-500">{review.from}</p>
+            <p className="text-gray-200 text-sm sm:text-base mb-3">"{review.text}"</p>
+            <p className="text-sm text-purple-300 font-medium">{review.from}</p>
           </motion.div>
         ))}
       </div>
