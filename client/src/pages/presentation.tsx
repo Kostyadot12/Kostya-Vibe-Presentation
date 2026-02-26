@@ -769,7 +769,7 @@ function Slide18() {
         <div className="rounded-2xl bg-gradient-to-r from-purple-900/40 via-pink-900/20 to-cyan-900/30 border border-purple-500/20 p-6 sm:p-8 mb-6">
           <div className="flex items-center gap-3 mb-4">
             <AlertTriangle className="w-6 h-6 text-yellow-400" />
-            <h3 className="text-xl font-bold text-white">2025-2027: окно. Потом - поздно.</h3>
+            <h3 className="text-xl font-bold text-white">2026-2028: окно. Потом - поздно.</h3>
           </div>
           <div className="space-y-3 text-base sm:text-lg text-gray-300">
             <p>Сейчас: вайб-кодеров <strong className="text-white">единицы</strong>. Конкуренции нет.</p>
