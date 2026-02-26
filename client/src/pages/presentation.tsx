@@ -1063,13 +1063,13 @@ function Slide27() {
       </SlideTitle>
       <div className="max-w-3xl w-full space-y-4">
         {[
-          { icon: Calendar, text: "Живые эфиры каждый день - 14 дней" },
-          { icon: MessageSquare, text: "Личная обратная связь на каждый проект" },
-          { icon: Users, text: "Закрытый чат 24/7" },
-          { icon: Code2, text: "Все промпты, шаблоны, скрипты продаж" },
-          { icon: Gift, text: "Доступ к Lovable (за мой счет)" },
-          { icon: Target, text: "Помощь с поиском первого клиента" },
-          { icon: Award, text: "Результат: продукт + навык + первый клиент" },
+          { icon: Calendar, text: "Ежедневные зум-созвоны лично со мной — 14 дней" },
+          { icon: MessageSquare, text: "Личная обратная связь — без кураторов" },
+          { icon: Code2, text: "Реальная практика: создаём сложные сервисы" },
+          { icon: Users, text: "Закрытый чат 24/7 + все промпты и шаблоны" },
+          { icon: Target, text: "Поиск клиентов: скрипты, Авито (приглашённый спикер)" },
+          { icon: Gift, text: "Передача заявок от меня на сайты/сервисы (по возможности)" },
+          { icon: Award, text: "Результат: продукт + навык + первые деньги" },
         ].map((item, i) => (
           <BulletPoint key={i} icon={item.icon} delay={i}>
             {item.text}
@@ -1088,11 +1088,11 @@ function Slide28() {
       </SlideTitle>
       <div className="max-w-3xl w-full">
         <div className="rounded-xl bg-white/5 border border-white/10 p-5 sm:p-6 mb-6">
-          <PriceRow label="14 дней живых эфиров" price="70 000 &#8381;" />
-          <PriceRow label="Промпты и шаблоны" price="5 000 &#8381;" />
-          <PriceRow label="Скрипты продаж клиентам" price="10 000 &#8381;" />
-          <PriceRow label="Доступ к Lovable" price="2 000 &#8381;/мес" />
-          <PriceRow label="Помощь с первым клиентом" price="бесценно" />
+          <PriceRow label="14 дней ежедневных зумов лично со мной" price="70 000 &#8381;" />
+          <PriceRow label="Практика по сложным сервисам" price="15 000 &#8381;" />
+          <PriceRow label="Промпты, шаблоны, скрипты продаж" price="10 000 &#8381;" />
+          <PriceRow label="Спикер по Авито + поиск клиентов" price="бесценно" />
+          <PriceRow label="Передача заявок от меня" price="бесценно" />
           <PriceRow label="Закрытый чат и окружение" price="бесценно" />
           <div className="flex items-center justify-between pt-3 mt-2 border-t border-white/20">
             <span className="text-lg font-semibold text-white">Общая ценность</span>
