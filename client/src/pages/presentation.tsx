@@ -42,6 +42,11 @@ import receipt10 from "@assets/2026-02-26_17.42.52_1772117075361.jpg";
 import avatarPhoto from "@assets/2026-02-26_17.48.43_1772117336127.jpg";
 import avatarPhoto2 from "@assets/2026-02-26_17.56.14_1772117865471.jpg";
 
+import review1 from "@assets/Снимок_экрана_2026-02-26_в_18.26.24_1772119587895.png";
+import review2 from "@assets/Снимок_экрана_2026-02-26_в_18.27.22_1772119645574.png";
+import review3 from "@assets/Снимок_экрана_2026-02-26_в_18.27.37_1772119659798.png";
+import review4 from "@assets/Снимок_экрана_2026-02-26_в_18.27.52_1772119674316.png";
+
 const receiptImages = [receipt1, receipt2, receipt3, receipt4, receipt5, receipt6, receipt7, receipt8, receipt9, receipt10];
 
 interface SlideProps {
@@ -943,22 +948,20 @@ function Slide23() {
       </SlideTitle>
       <SlideSubtitle>Вот что пишут ребята, которые уже начали</SlideSubtitle>
       <div className="max-w-3xl w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {[
-          { text: "Я иду на мастер-класс, потому что мне нужен опытный партнер и возможность получить наставничество от практика, а не просто преподавателя.", from: "Алексей Чиженко" },
-          { text: "Сделаю этот проект с Костей на мастер группе. У меня уже 13 листов ТЗ — какие данные нужны, как обрабатываться и визуализироваться.", from: "Участник МГ" },
-          { text: "Ценность данного марафона бесценна, много фишек и идей в направлении вайбкода, который раскрывается в океан возможностей!!!", from: "S Dmitriy" },
-          { text: "Очень крутой марафон. Это первый случай когда я заплатил и остался в плюсе x2. Спасибо Косте за материал и готовность помочь каждому индивидуально!", from: "Kirill Bodyagin" },
-        ].map((review, i) => (
+        {[review1, review2, review3, review4].map((img, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.15 }}
-            className="rounded-xl bg-white/5 border border-white/10 p-5"
+            className="rounded-xl bg-white/5 border border-white/10 p-2 overflow-hidden"
           >
-            <Star className="w-4 h-4 text-yellow-400 mb-3" />
-            <p className="text-gray-200 text-sm sm:text-base mb-3">"{review.text}"</p>
-            <p className="text-sm text-purple-300 font-medium">{review.from}</p>
+            <img
+              src={img}
+              alt={`Отзыв ${i + 1}`}
+              className="w-full h-auto rounded-lg"
+              data-testid={`img-review-${i}`}
+            />
           </motion.div>
         ))}
       </div>
