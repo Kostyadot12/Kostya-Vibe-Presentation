@@ -440,9 +440,9 @@ function Slide8() {
         МОЙ <GradientText>ПЕРВЫЙ КЛИЕНТ</GradientText>
       </SlideTitle>
       <div className="max-w-3xl w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-        <NumberCard number="25 000 &#8381;" label="первый заказ" accent />
-        <NumberCard number="6 часов" label="время работы" />
-        <NumberCard number="4 100 &#8381;" label="в час" accent />
+        <NumberCard number="15 000 &#8381;" label="первый заказ" accent />
+        <NumberCard number="2,5 часа" label="время работы" />
+        <NumberCard number="6 000 &#8381;" label="в час" accent />
         <NumberCard number="0" label="строчек кода" />
       </div>
       <div className="max-w-2xl w-full space-y-4">
@@ -450,7 +450,7 @@ function Slide8() {
           Без портфолио. Без опыта. Без кода.
         </BulletPoint>
         <BulletPoint icon={ArrowRight} delay={1}>
-          Курьер - 300 &#8381;/час. Репетитор - 1 000. Я - <strong className="text-purple-300">4 100</strong>
+          Курьер - 300 &#8381;/час. Репетитор - 1 000. Я - <strong className="text-purple-300">6 000</strong>
         </BulletPoint>
       </div>
     </SlideContainer>
