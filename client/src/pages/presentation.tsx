@@ -40,6 +40,7 @@ import receipt9 from "@assets/2026-02-26_17.42.50_1772117075361.jpg";
 import receipt10 from "@assets/2026-02-26_17.42.52_1772117075361.jpg";
 
 import avatarPhoto from "@assets/2026-02-26_17.48.43_1772117336127.jpg";
+import avatarPhoto2 from "@assets/2026-02-26_17.56.14_1772117865471.jpg";
 
 const receiptImages = [receipt1, receipt2, receipt3, receipt4, receipt5, receipt6, receipt7, receipt8, receipt9, receipt10];
 
@@ -212,6 +213,14 @@ function Slide1() {
 function Slide2() {
   return (
     <SlideContainer>
+      <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-3 border-purple-500/50 p-1 mx-auto mb-6">
+        <img
+          src={avatarPhoto2}
+          alt="Костя на Вайбе"
+          className="w-full h-full rounded-full object-cover object-[center_25%]"
+          data-testid="img-avatar-slide2"
+        />
+      </div>
       <SlideTitle>
         <GradientText>КТО Я</GradientText>
       </SlideTitle>
